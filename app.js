@@ -7,7 +7,7 @@ const PORT = 3000;
 
 const app = express();
 
-const url = "http://google.com"; // Replace with the URL of the website you want to check
+const url = "http://koioi.com"; // Replace with the URL of the website you want to check
 const siteName = "VentraInc"; // Replace with the Name of the website you want to check
 
 const transporter = nodemailer.createTransport({
