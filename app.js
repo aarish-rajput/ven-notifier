@@ -83,7 +83,7 @@ async function checkWebsiteStatus() {
 })();
 
 app.get("/", (req, res) => {
-  res.send({ data: "working" });
+  res.send({ data: "app is working" });
 });
 
 app.listen(PORT, function (err) {
