@@ -1,6 +1,9 @@
 const nodemailer = require("nodemailer");
 const axios = require("axios");
 require("dotenv").config();
+const express = require("express");
+
+const app = express();
 
 const url = "http://koioi.com"; // Replace with the URL of the website you want to check
 const siteName = "VentraInc"; // Replace with the Name of the website you want to check
@@ -76,3 +79,7 @@ async function checkWebsiteStatus() {
     checkWebsiteStatus();
   }, 600000);
 })();
+
+app.get("/", (req, res) => {
+  res.send({ data: "working" });
+});
