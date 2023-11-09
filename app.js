@@ -3,9 +3,11 @@ const axios = require("axios");
 require("dotenv").config();
 const express = require("express");
 
+PORT = 3000;
+
 const app = express();
 
-const url = "http://koioi.com"; // Replace with the URL of the website you want to check
+const url = "http://google.com"; // Replace with the URL of the website you want to check
 const siteName = "VentraInc"; // Replace with the Name of the website you want to check
 
 const transporter = nodemailer.createTransport({
@@ -82,4 +84,9 @@ async function checkWebsiteStatus() {
 
 app.get("/", (req, res) => {
   res.send({ data: "working" });
+});
+
+app.listen(PORT, function (err) {
+  if (err) console.log("Error in server setup");
+  console.log("Server listening on Port", PORT);
 });
