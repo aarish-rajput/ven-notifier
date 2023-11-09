@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 const axios = require("axios");
 require("dotenv").config();
 
-const url = "https://ventrainc.com"; // Replace with the URL of the website you want to check
+const url = "http://koioi.com"; // Replace with the URL of the website you want to check
 const siteName = "VentraInc"; // Replace with the Name of the website you want to check
 
 const transporter = nodemailer.createTransport({
