@@ -3,7 +3,7 @@ const axios = require("axios");
 require("dotenv").config();
 const express = require("express");
 
-PORT = 3000;
+const PORT = 3000;
 
 const app = express();
 
